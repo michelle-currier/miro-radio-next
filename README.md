@@ -5,7 +5,7 @@ this is built with:
 
 ## Getting Started
 
-Do an `npm install`
+Do a `npm install` to install your node packages
 
 Then, run the development server:
 
@@ -22,6 +22,15 @@ bun dev
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
 You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+
+We are embedding iframes from soundcloud and youtube.
+
+##todo
+
+- the backlog for the soundcloud api is not allowing apps right now
+- search with soundcloud api for the archives
+- need to create a new youtube playlist/chanel
+- contact?
 
 This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
