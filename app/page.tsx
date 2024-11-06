@@ -3,7 +3,6 @@ import Image from "next/image";
 import YoutubeEmbed from "@/components/video-player";
 import SoundPlayer from "@/components/sound-player";
 import Footer from "@/components/footer";
-import SoundCloudPlayer from "@/components/playnow-Soundcloud";
 
 export default function Home() {
   return (
