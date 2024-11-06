@@ -32,7 +32,8 @@ We are embedding iframes from soundcloud and youtube.
 - need to create a new youtube playlist/chanel
 - contact?
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel
+and [`react-icons`](https://react-icons.github.io/react-icons/) for the icons.
 
 ## Learn More
 
@@ -48,3 +49,7 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+## soundcloud playlist widget
+
+use the SoundCloudPlayer with the prop for the url on the component ` <SoundCloudPlayer playlistUrl="https://api.soundcloud.com/playlists/1901635067" />` like this.

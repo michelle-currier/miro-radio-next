@@ -10,11 +10,8 @@ interface YoutubeEmbedProps {
 const YoutubeEmbed: React.FC<YoutubeEmbedProps> = ({ embedId }) => (
   <div className="video-responsive">
     <iframe
-      className="rounded-md shadow-sm"
-      width="853"
-      height="480"
+      className="rounded-md shadow-sm responsive-iframe"
       src={`https://www.youtube.com/embed/${embedId}`}
-      frameBorder="0"
       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
       allowFullScreen
       title="Embedded youtube"
