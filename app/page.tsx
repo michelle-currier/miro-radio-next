@@ -9,6 +9,7 @@ export default function Home() {
     <>
       <div className="flex flex-row justify-between w-full">
         <Image
+          data-aos="fade-right"
           src="/miro-logo.png"
           width={264}
           height={230}
@@ -32,11 +33,15 @@ export default function Home() {
             </a> */}
           {/* <SoundCloudPlayer playlistUrl="https://api.soundcloud.com/playlists/1901635067" /> */}
 
-          <p className="bg-slate-900 rounded-md px-3 py-1 justify-self-center">
+          <p
+            className="bg-slate-900 rounded-md px-3 py-1 justify-self-center"
+            data-aos="fade-up"
+          >
             <code>Music from the New Orleans Underground</code>
           </p>
           <Link
-            className="rounded-full border border-solid border-black/[.08] transition-colors flex items-center justify-center hover:bg-indigo-400  hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
+            data-aos="fade-left"
+            className="rounded-full border border-solid border-white/[.08] transition-colors flex items-center justify-center hover:bg-indigo-400  hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
             href="/about"
             rel="noopener noreferrer"
           >
@@ -45,7 +50,7 @@ export default function Home() {
         </div>
       </div>
 
-      <SoundPlayer></SoundPlayer>
+      <SoundPlayer data-aos="fade-up" data-aos-delay={250}></SoundPlayer>
       <YoutubePlayer></YoutubePlayer>
       {/* <YoutubeEmbed embedId="videoseries?si=BfEOmnDEXpFy0meW&amp;list=PLWAXBDf7xbeR_cbLB2lP-PDFlvUqhnAPz"></YoutubeEmbed> */}
     </>

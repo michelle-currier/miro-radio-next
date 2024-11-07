@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@next/font": "^14.2.15",
+    "aos": "^3.0.0-beta.6",
     "dotenv": "^16.4.5",
     "next": "15.0.2",
     "react": "19.0.0-rc-02c0e824-20241028",
@@ -18,6 +19,7 @@
     "soundcloud-audio": "^1.4.0"
   },
   "devDependencies": {
+    "@types/aos": "^3.0.7",
     "@types/node": "^20",
     "@types/react": "^18.3.12",
     "@types/react-dom": "^18",
