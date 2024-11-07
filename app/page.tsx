@@ -36,11 +36,11 @@ export default function Home() {
             <code>Music from the New Orleans Underground</code>
           </p>
           <Link
-            className="rounded-full border border-solid border-black/[.08] transition-colors flex items-center justify-center hover:bg-indigo-200  hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
+            className="rounded-full border border-solid border-black/[.08] transition-colors flex items-center justify-center hover:bg-indigo-400  hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
             href="/about"
             rel="noopener noreferrer"
           >
-            Read our docs
+            Videos
           </Link>
         </div>
       </div>

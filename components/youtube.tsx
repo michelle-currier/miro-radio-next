@@ -28,8 +28,15 @@ export default function YoutubePlaylist() {
   const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
+    const apiKey = process.env.NEXT_PUBLIC_YOUTUBE_API_KEY;
+
+    if (!apiKey) {
+      setError("API key is missing");
+      return;
+    }
+
     fetch(
-      "https://youtube.googleapis.com/youtube/v3/playlistItems?part=snippet&maxResults=23&playlistId=PLWAXBDf7xbeR_cbLB2lP-PDFlvUqhnAPz&key=AIzaSyB3qfokjvF6LqOt20DjezdJZAczdGnyymo"
+      `https://youtube.googleapis.com/youtube/v3/playlistItems?part=snippet&maxResults=23&playlistId=PLWAXBDf7xbeR_cbLB2lP-PDFlvUqhnAPz&key=${apiKey}`
     )
       .then((res) => {
         if (!res.ok) {
@@ -37,7 +44,7 @@ export default function YoutubePlaylist() {
         }
         return res.json();
       })
-      .then((data) => {
+      .then((data: YoutubeApiResponse) => {
         if (data.items) {
           setVideos(data.items);
         } else {

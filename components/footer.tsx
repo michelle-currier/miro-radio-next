@@ -9,12 +9,12 @@ export default function Footer() {
     <footer className="container row-start-3 flex gap-6 flex-wrap items-center justify-between px-2 lg:px-16 pb-10 max-xl ">
       <Link
         className="flex items-center gap-2 hover:underline hover:underline-offset-4 text-teal-200"
-        href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
+        href="https://www.youtube.com/watch?v=Bzw2T18YDJ4&ab_channel=LearnwithJon"
         rel="noopener noreferrer"
         title=""
       >
         <FaHeadphones />
-        Discover
+        Youtube api tut
       </Link>
       <Link
         className="flex items-center gap-2 hover:underline hover:underline-offset-4 text-pink-200"
