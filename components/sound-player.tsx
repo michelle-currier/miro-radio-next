@@ -1,66 +1,19 @@
-"use-client";
+import { Suspense } from "react";
+import { Loading } from "./loading";
 
-// const SoundCloudAudio = require("soundcloud-audio");
-
-// // create new instance of audio
-// // clientId is optional but without it you cannot play tracks directly from SoundCloud API
-// const scPlayer = new SoundCloudAudio("YOUR_CLIENT_ID"); // there is a waiting list for this right now
-
-// // if you have a SoundCloud api stream url you can just play it like that
-// scPlayer.play({
-//  streamUrl: 'https://api.soundcloud.com/tracks/185533328/stream'
-// });
-
-// // OR if you want to play a NON-SoundCloud audio
-// scPlayer.play({ streamUrl: 'https://example.com/plain/audio/file' });
-
-// // OR if you need to load a SoundCloud track and resolve it's data
-//  scPlayer.resolve('https://soundcloud.com/djangodjango/first-light', function(
-//    track
-//  ) {
-// // do smth with track object
-// // e.g. display data in a view etc.
-//    console.log(track);
-
-// // once track is loaded it can be played
-//    scPlayer.play();
-
-// // stop playing track and keep silence
-//    scPlayer.pause();
-//  });
-
-// // OR a SoundCloud playlist and resolve it's data
-// scPlayer.resolve(
-//   "http://soundcloud.com/jxnblk/sets/yello",
-//   function (playlist) {
-//     // do smth with array of `playlist.tracks` or playlist's metadata
-//     // e.g. display playlist info in a view etc.
-//     console.log(playlist);
-
-//     // once playlist is loaded it can be played
-//     scPlayer.play();
-
-//     // for playlists it's possible to switch to another track in queue
-//     // e.g. we do it here when playing track is finished
-//     scPlayer.on("ended", function () {
-//       scPlayer.next();
-//     });
-
-//     // play specific track from playlist by it's index
-//     scPlayer.play({ playlistIndex: 2 });
-//   }
-// );
 export default function SoundPlayer() {
   return (
     <>
-      <iframe
-        className="rounded-md"
-        width="100%"
-        height="166"
-        aria-label="Soundcloud playlist for Miro Radio"
-        src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1901635067&color=%236840c7&auto_play=false&hide_related=false&show_comments=false&show_user=true&show_reposts=false&show_teaser=true"
-      ></iframe>
-
+      <Suspense fallback={<Loading />}>
+        <iframe
+          className="rounded-md soundCloud"
+          width="100%"
+          height="332"
+          scrolling="yes"
+          aria-label="Soundcloud playlist for Miro Radio"
+          src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1901635067&color=%236840c7&auto_play=false&hide_related=false&show_comments=false&show_user=true&show_reposts=false&show_teaser=true"
+        ></iframe>
+      </Suspense>
       {/* <iframe
         width="100%"
         height="300"

@@ -1,4 +1,3 @@
-"use client";
 import Link from "next/link";
 
 import { FaHeadphones } from "react-icons/fa6";
@@ -7,11 +6,10 @@ import { FaCircleInfo } from "react-icons/fa6";
 
 export default function Footer() {
   return (
-    <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-between w-full">
+    <footer className="container row-start-3 flex gap-6 flex-wrap items-center justify-between px-2 lg:px-16 pb-10 max-xl ">
       <Link
         className="flex items-center gap-2 hover:underline hover:underline-offset-4 text-teal-200"
         href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-        target="_blank"
         rel="noopener noreferrer"
         title=""
       >
@@ -20,8 +18,7 @@ export default function Footer() {
       </Link>
       <Link
         className="flex items-center gap-2 hover:underline hover:underline-offset-4 text-pink-200"
-        href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-        target="_blank"
+        href="/"
         rel="noopener noreferrer"
       >
         <IoLibrary />
