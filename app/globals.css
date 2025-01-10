@@ -23,8 +23,12 @@ body {
 
 .fun-bg {
   background-color: #10439f;
-background-image: radial-gradient(at 23% 16%, #10439f 0%, transparent 60%), radial-gradient(at 36% 1%, #874ccc 0%, transparent 50%), radial-gradient(at 85% 77%, #c65bcf 0%, transparent 40%), radial-gradient(at 34% 42%, #f27bbd 0%, transparent 30%);
+/* background-image: radial-gradient(at 23% 16%, #10439f 0%, transparent 60%), radial-gradient(at 36% 1%, #874ccc 0%, transparent 50%), radial-gradient(at 85% 77%, #c65bcf 0%, transparent 40%), radial-gradient(at 34% 42%, #f27bbd 0%, transparent 30%); */
+
+background: radial-gradient(at 98.0603448275862% 1.875%, #06007f 0px, transparent 50%), radial-gradient(at 20.79741379310345% 11.875%, #530441 0px, transparent 50%), radial-gradient(at 100% 100%, #804040 0px, transparent 50%), #09203f;
+    
 }
+
 .video-responsive {
   position: relative;
   overflow: hidden;

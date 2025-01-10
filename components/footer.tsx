@@ -18,7 +18,7 @@ export default function Footer() {
       </Link>
       <Link
         className="flex items-center gap-2 hover:underline hover:underline-offset-4 text-pink-200"
-        href="/"
+        href="/about"
         rel="noopener noreferrer"
       >
         <IoLibrary />

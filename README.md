@@ -11,12 +11,6 @@ Then, run the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
@@ -53,3 +47,14 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
 ## soundcloud playlist widget
 
 use the SoundCloudPlayer with the prop for the url on the component ` <SoundCloudPlayer playlistUrl="https://api.soundcloud.com/playlists/1901635067" />` like this.
+
+## youtube api
+
+reference this [video](https://youtu.be/DuudSp4sHmg?si=-Y16S5GinHLhp5yM)
+
+go to [console.cloud.google.com](https://console.cloud.google.com/)
+create a google cloud project
+create credentials
+youtube data api
+[Youtube api docs](https://developers.google.com/youtube/v3/docs/videos/list) for testing
+get the api key add

@@ -7,7 +7,7 @@ export default function About() {
       <div className="justify-start items-center p-6 gap-8">
         <h2 className="text-4xl font-bold">About</h2>
         <p>more info maybe</p>
-        <YoutubePlaylist></YoutubePlaylist>
+        <YoutubePlaylist maxResults={23}></YoutubePlaylist>
       </div>
     </div>
   );

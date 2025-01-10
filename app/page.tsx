@@ -41,7 +41,9 @@ export default function Home() {
           </p>
           <Link
             data-aos="fade-left"
-            className="rounded-full border border-solid border-white/[.08] transition-colors flex items-center justify-center hover:bg-indigo-400  hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
+            className="rounded-full border-4 border-solid border-white transition-colors flex items-center justify-center hover:shadow-[inset_0px_0px_12px_8px_rgba(102,_52,_255,_1)]
+            hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44
+            hover:border-4 hover:border-indigo-600 hover:text-indigo-400"
             href="/about"
             rel="noopener noreferrer"
           >
@@ -51,7 +53,7 @@ export default function Home() {
       </div>
 
       <SoundPlayer data-aos="fade-up" data-aos-delay={250}></SoundPlayer>
-      <YoutubePlayer></YoutubePlayer>
+      <YoutubePlayer maxResults={3}></YoutubePlayer>
       {/* <YoutubeEmbed embedId="videoseries?si=BfEOmnDEXpFy0meW&amp;list=PLWAXBDf7xbeR_cbLB2lP-PDFlvUqhnAPz"></YoutubeEmbed> */}
     </>
   );

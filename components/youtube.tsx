@@ -23,7 +23,10 @@ interface VideoItem {
 interface YoutubeApiResponse {
   items: VideoItem[];
 }
-export default function YoutubePlaylist() {
+interface YoutubePlaylistProps {
+  maxResults?: number; // Define maxResults as an optional prop
+}
+export default function YoutubePlaylist({ maxResults = 3 }) {
   const [videos, setVideos] = useState<VideoItem[]>([]);
   const [error, setError] = useState<string | null>(null);
 
@@ -36,7 +39,9 @@ export default function YoutubePlaylist() {
     }
 
     fetch(
-      `https://youtube.googleapis.com/youtube/v3/playlistItems?part=snippet&maxResults=23&playlistId=PLWAXBDf7xbeR_cbLB2lP-PDFlvUqhnAPz&key=${apiKey}`
+      // change this depending on your playlist id
+      // `https://youtube.googleapis.com/youtube/v3/playlistItems?part=snippet&maxResults=${maxResults}&playlistId=PLWAXBDf7xbeR_cbLB2lP-PDFlvUqhnAPz&key=${apiKey}`
+      `https://youtube.googleapis.com/youtube/v3/playlistItems?part=snippet&maxResults=${maxResults}&playlistId=PLWAXBDf7xbeRI1ojyG4GmAqj12ZtDpvKi&key=${apiKey}`
     )
       .then((res) => {
         if (!res.ok) {
@@ -55,7 +60,7 @@ export default function YoutubePlaylist() {
         console.error("Error fetching video data:", error);
         setError("Failed to load videos.");
       });
-  }, []);
+  }, [maxResults]);
 
   return (
     <section>
@@ -82,7 +87,7 @@ export default function YoutubePlaylist() {
               rel="noopener noreferrer"
               className="yt-video"
             >
-              <img src={thumbnailUrl} alt={snippet.title} />
+              <img src={thumbnailUrl} alt={snippet.title} data-aos="fade-up" />
               <h3>{snippet.title}</h3>
             </a>
           );
