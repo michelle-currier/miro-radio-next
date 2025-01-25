@@ -42,7 +42,7 @@ export default function RootLayout({
       {/* <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       > */}
-      <body className={`${raleway.variable} antialiased`}>
+      <body className={`${raleway.variable} antialiased squares-bg`}>
         <div className="w-full flex flex-col items-center justify-items-center min-h-screen gap-4 font-[family-name:var(--font-geist-sans)] fun-bg">
           <main className="container flex flex-col gap-8 items-center sm:items-start sm:px-1 lg:px-16 pb-10 max-xl border-b-4 border-slate-900">
             {children}

@@ -21,13 +21,40 @@ body {
 
 }
 
-.fun-bg {
+/* .fun-bg {
   background-color: #10439f;
-/* background-image: radial-gradient(at 23% 16%, #10439f 0%, transparent 60%), radial-gradient(at 36% 1%, #874ccc 0%, transparent 50%), radial-gradient(at 85% 77%, #c65bcf 0%, transparent 40%), radial-gradient(at 34% 42%, #f27bbd 0%, transparent 30%); */
-
 background: radial-gradient(at 98.0603448275862% 1.875%, #06007f 0px, transparent 50%), radial-gradient(at 20.79741379310345% 11.875%, #530441 0px, transparent 50%), radial-gradient(at 100% 100%, #804040 0px, transparent 50%), #09203f;
-    
+position: relative;
+z-index: 0;
+} */
+.fun-bg > * {
+  position: relative;
+  z-index: 2;
 }
+.squares-bg {
+  background-color: #10439f;
+  background: radial-gradient(at 98.0603448275862% 1.875%, #06007f 0px, transparent 50%), radial-gradient(at 20.79741379310345% 11.875%, #530441 0px, transparent 50%), radial-gradient(at 100% 100%, #804040 0px, transparent 50%), #09203f;
+  position: relative;
+  z-index: 0;
+}
+.squares-bg::before {
+  content: ""; 
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1; /* Keep it below child elements */
+  opacity: 0.8;
+  background-image:  linear-gradient(#444cf7 1px, transparent 1px), linear-gradient(to right, #444cf7 1px, transparent  1px);
+  background-size: 20px 20px;
+  pointer-events: none; 
+}
+/* .squares-bg > * {
+  position: relative;
+  z-index: 4;
+  opacity: 1;
+} */
 
 .video-responsive {
   position: relative;
@@ -51,8 +78,15 @@ background: radial-gradient(at 98.0603448275862% 1.875%, #06007f 0px, transparen
   border-radius: 15px;
   margin-top: 1rem;
 }
+a.btn:hover {
+  border-radius: 0px;
+  transition-property: border-radius;
+    transition-timing-function: cubic-bezier(.4,0,.2,1);
+    transition-duration: .15s;
+}
 @layer base {
   html {
     font-family: "Raleway", sans-serif;
   }
+
 }

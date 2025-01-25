@@ -41,9 +41,9 @@ export default function Home() {
           </p>
           <Link
             data-aos="fade-left"
-            className="rounded-full border-4 border-solid border-white transition-colors flex items-center justify-center hover:shadow-[inset_0px_0px_12px_8px_rgba(102,_52,_255,_1)]
+            className="rounded-full border-4 border-solid border-white flex items-center justify-center hover:shadow-[inset_0px_0px_12px_8px_rgba(102,_52,_255,_1)]
             hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44
-            hover:border-4 hover:border-indigo-600 hover:text-indigo-400"
+            hover:border-4 hover:border-indigo-600 hover:rounded-none transition duration-500 ease-in-out"
             href="/about"
             rel="noopener noreferrer"
           >
