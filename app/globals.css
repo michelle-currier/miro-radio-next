@@ -87,6 +87,7 @@ a.btn:hover {
 @layer base {
   html {
     font-family: "Raleway", sans-serif;
+    color: var(--foreground);
   }
 
 }

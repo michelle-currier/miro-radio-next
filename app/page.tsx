@@ -34,14 +34,14 @@ export default function Home() {
           {/* <SoundCloudPlayer playlistUrl="https://api.soundcloud.com/playlists/1901635067" /> */}
 
           <p
-            className="bg-slate-900 rounded-md px-3 py-1 justify-self-center"
+            className="bg-slate-900 rounded-md px-3 py-1 justify-self-center text-slate-400 text-l"
             data-aos="fade-up"
           >
             <code>Music from the New Orleans Underground</code>
           </p>
           <Link
             data-aos="fade-left"
-            className="rounded-full border-4 border-solid border-white flex items-center justify-center hover:shadow-[inset_0px_0px_12px_8px_rgba(102,_52,_255,_1)]
+            className="rounded-full border-4 border-solid border-white font-bold text-slate-400 flex items-center justify-center hover:shadow-[inset_0px_0px_12px_8px_rgba(102,_52,_255,_1)]
             hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44
             hover:border-4 hover:border-indigo-600 hover:rounded-none transition duration-500 ease-in-out"
             href="/about"

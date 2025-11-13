@@ -6,7 +6,7 @@ import { FaCircleInfo } from "react-icons/fa6";
 
 export default function Footer() {
   return (
-    <footer className="container row-start-3 flex gap-6 flex-wrap items-center justify-between px-2 lg:px-16 pb-10 max-xl ">
+    <footer className="container row-start-3 flex gap-6 flex-wrap items-center justify-between px-2 lg:px-16 pb-10 max-xl text-pink-300">
       <Link
         className="flex items-center gap-2 hover:underline hover:underline-offset-4 text-teal-200"
         href="https://www.youtube.com/watch?v=Bzw2T18YDJ4&ab_channel=LearnwithJon"
@@ -22,7 +22,7 @@ export default function Footer() {
         rel="noopener noreferrer"
       >
         <IoLibrary />
-        Acrhives
+        Archives
       </Link>
       <Link
         className="flex items-center gap-2 hover:underline hover:underline-offset-4 text-lime-200"
