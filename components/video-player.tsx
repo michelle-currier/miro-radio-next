@@ -29,14 +29,4 @@ YoutubeEmbed.propTypes = {
 
 export default YoutubeEmbed;
 
-//www.youtube.com/watch?v=m_qewI-1cEs&list=PLWAXBDf7xbeR_cbLB2lP-PDFlvUqhnAPz&ab_channel=BoilerRoom
-// https: <iframe
-//   width="560"
-//   height="315"
-//   src="https://www.youtube.com/embed/m_qewI-1cEs?si=SCNc2VoV9mJGxacJ"
-//   title="YouTube video player"
-//   frameborder="0"
-//   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-//   referrerpolicy="strict-origin-when-cross-origin"
-//   allowfullscreen
-// ></iframe>;
+
