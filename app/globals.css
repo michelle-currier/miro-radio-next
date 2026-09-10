@@ -74,9 +74,12 @@ z-index: 0;
 .soundCloud {
   overflow-y: scroll;
 }
+
 .yt-video img {
   border-radius: 15px;
   margin-top: 1rem;
+  width: 100%;
+  height: 100%;
 }
 a.btn:hover {
   border-radius: 0px;

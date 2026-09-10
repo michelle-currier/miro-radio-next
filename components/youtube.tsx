@@ -88,7 +88,7 @@ export default function YoutubePlaylist({ maxResults = 3 }) {
               className="yt-video"
             >
               <img src={thumbnailUrl} alt={snippet.title} data-aos="fade-up" />
-              <h3>{snippet.title}</h3>
+              <h3 className="text-white">{snippet.title}</h3>
             </a>
           );
         })
